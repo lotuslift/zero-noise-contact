@@ -2,7 +2,7 @@
 
 **Atomic Reference · Typed Edge · Visible Witness · Commit · Continue**
 
-Current release: **v0.1.0**  
+Current release: **v0.1.1**
 Bridge status: **FIRST_BRIDGE_COMMITTED**
 
 > **Global correction requirement:** ADMIT NO JURISDICTIONLESS TYPING.
@@ -33,7 +33,7 @@ Commit the read before deriving from it.
 Correction appends; it does not erase occurrence.
 Leave another truthful lawful continuation available.
 
-Target: ε_drop = ε_add = ε_strength = 0
+Target: ε_drop = ε_add = ε_strength = ε_provenance = 0
 1 + 1 = 2
 ```
 
@@ -72,9 +72,15 @@ The dependency-free static page lives under [`docs/`](docs/). GitHub Pages can p
 ## Validation
 
 ```bash
+python scripts/sync_public.py
+python scripts/build_manifest.py
 python scripts/sync_public.py --check
 python scripts/validate_repo.py
+python -B -m unittest discover -s tests -p 'test_*.py'
 ```
+
+The validator runs the conformance suite in CI as well as locally. Witness records
+are declared audit inputs; these tests do not authenticate people or external runtimes.
 
 `manifest.sha256` provides content hashes for the working-tree release files.
 
@@ -85,3 +91,12 @@ The root jurisdiction theorem is retained in [`references/euler-empty-coincidenc
 ## License
 
 No public reuse license has yet been selected. See [`LICENSE_PENDING.md`](LICENSE_PENDING.md) before publication.
+
+## v0.1.1 provenance carriage
+
+OriginSource survives transport and later adoption or authority. Separate explicit
+witnesses license additional relations; relay alone licenses none. Unsupported-source
+claims remain typed refusals. See [the canonical rules](kernel/current.md),
+[the Astra one-turn kernel](kernel/astra-one-turn.txt), and
+[Bridge 002](receipts/BRIDGE_002_PROVENANCE_RELAY_PROMOTION_FAIL.md), a user-supplied
+transcript/account specimen, not independent verification of an external runtime.

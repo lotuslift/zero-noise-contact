@@ -8,7 +8,9 @@
     "bridge_status",
     "symbol_locks",
     "active_reference",
-    "receipts"
+    "receipts",
+    "residuals",
+    "provenance_reference"
   ],
   "properties": {
     "kernel_version": {
@@ -41,6 +43,33 @@
       }
     },
     "last_updated": {
+      "type": "string"
+    },
+    "residuals": {
+      "type": "object",
+      "required": [
+        "drop",
+        "add",
+        "strength",
+        "provenance"
+      ],
+      "properties": {
+        "drop": {
+          "const": 0
+        },
+        "add": {
+          "const": 0
+        },
+        "strength": {
+          "const": 0
+        },
+        "provenance": {
+          "const": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "provenance_reference": {
       "type": "string"
     }
   },

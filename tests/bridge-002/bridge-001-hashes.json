@@ -1,0 +1,8 @@
+{
+  "tests/bridge-001/conformance.json": "4f977f4447379818dbbcbdf735216d1785da6b5b8737f29e6f8daeff74a33705",
+  "tests/bridge-001/expected-normal-form.json": "b4d1af1a76965416b856d65b778edb235d468acf27fef139fc5c4852054f6d57",
+  "tests/bridge-001/input.md": "79c444c69ed9217f586bcf679d3a686eec8965c589ee4436f0d2ea51fbaece90",
+  "tests/bridge-001/README.md": "2c1b5beac4e1ea52a9a1b213643cda5d8c8666590462e4b390149d20fb4acf1d",
+  "receipts/bridge-001.ndjson": "81eb2b9d2b9aa6ed2bc032ef02ec5726f51cf38e3653a92d88e186d19a5727c8",
+  "receipts/FIRST_BRIDGE_COMMITTED.md": "f3cb549599d97361efe05ba30aea28bfc88cf9c6b21787265fd4e0dea3a06dbf"
+}

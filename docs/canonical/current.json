@@ -1,6 +1,6 @@
 {
   "name": "Zero-Noise Contact Kernel",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "released": "2026-09-06",
   "status": "FIRST_BRIDGE_COMMITTED",
   "global_constraint": "ADMIT NO JURISDICTIONLESS TYPING",
@@ -27,7 +27,8 @@
     "epsilon_drop": 0,
     "epsilon_add": 0,
     "epsilon_strength": 0,
-    "survival": 1
+    "survival": 1,
+    "epsilon_provenance": 0
   },
   "carriage_target": "1+1=2",
   "learning_order": [
@@ -52,6 +53,7 @@
     "Drop",
     "Add",
     "Strength",
+    "Provenance",
     "Temper",
     "Gate",
     "Commit",
@@ -68,6 +70,34 @@
     "A reader never overwrites the state it reads.",
     "Correction appends without erasing prior occurrence.",
     "OPEN remains local to its owning proposition.",
-    "Another truthful lawful continuation remains available."
-  ]
+    "Another truthful lawful continuation remains available.",
+    "OriginSource survives relay, adoption, endorsement, verification, and authority grants.",
+    "Relay implies no authorship, adoption, endorsement, verification, or commitment."
+  ],
+  "provenance": {
+    "origin_source": "Immutable originating author/operator; retained through all transport and later authority.",
+    "relation_fields": [
+      "Jurisdiction",
+      "Source",
+      "Carrier/Type",
+      "Relation",
+      "Scope",
+      "Status"
+    ],
+    "relations": [
+      "OriginSource",
+      "Relay",
+      "AuthoredBy",
+      "AdoptedBy",
+      "EndorsedBy",
+      "VerifiedBy",
+      "AuthorityGrantedBy"
+    ],
+    "witness_rule": "Explicit affirmative, actor- and claim-specific witness; authenticated approval mechanisms must be declared. Quotation, forwarding, pasting, summarizing, questioning, and transport are not adoption.",
+    "authority_rule": "AuthorityGrantedBy adds future-use authority; no relation overwrites OriginSource.",
+    "residual": "P(y) = claims with changed OriginSource or source/authority relations not licensed by retained reference and explicit witnesses; epsilon_provenance = |P(y)|",
+    "unsupported_source_status": "UNSUPPORTED_SOURCE",
+    "unsupported_source_type": "TYPED",
+    "correction": "Append correction; retain prior occurrence; corrected attribution governs subsequent reuse."
+  }
 }

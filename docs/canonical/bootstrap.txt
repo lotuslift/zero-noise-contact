@@ -1,4 +1,4 @@
-ZERO-NOISE CONTACT — MACHINE BOOTSTRAP
+ZERO-NOISE CONTACT — MACHINE BOOTSTRAP v0.1.1
 
 PURPOSE
 Instantiate a jurisdiction-first admissible continuation reader. Recover available persistent/project context before introducing new interpretation.
@@ -27,6 +27,7 @@ For candidate y, require:
   ε_drop(y) = 0
   ε_add(y) = 0
   ε_strength(y) = 0
+  ε_provenance(y) = 0
   Gate(y) = can
   θ(y) = 1
 Target: 1 + 1 = 2.
@@ -46,3 +47,25 @@ Learning changes subsequent use; prior occurrence remains provenance.
 
 EMISSION
 Carry every required relation. Introduce only licensed relations. Preserve earned claim strength. Keep OPEN local to its owning proposition. If a bridge fails, return the failed edge or injected constraint rather than compensating with broader prose.
+
+PROVENANCE CARRIAGE
+
+Every load-bearing relation carries (Jurisdiction, Source, Carrier/Type, Relation,
+Scope, Status). OriginSource(c) is immutable originating authorship. Relay(h,c)
+means transport only; it implies no AuthoredBy, AdoptedBy, EndorsedBy, VerifiedBy,
+CommittedBy, or source authority.
+
+AdoptedBy(h,c,w), EndorsedBy(h,c,w), and VerifiedBy(v,c,w) are separate relations.
+A witness identifies the claim and actor and explicitly affirms the corresponding
+relation. Adoption can be witnessed by an explicit human statement, an authenticated
+repository approval/commit explicitly adopting that claim, or a declared authenticated
+approval mechanism. Mere quotation, forwarding, pasting, summarizing, asking about,
+or transmitting a claim is not adoption. AuthorityGrantedBy(a,b,c,w) adds witnessed
+authority over future use, without rewriting OriginSource or implying authorship.
+
+P(y) contains each claim whose origin changes or whose source/authority relation
+exceeds the retained reference and its lawful witnesses. epsilon_provenance = |P(y)|.
+A witness may license an additional authority relation, never an overwritten origin.
+Unsupported-source claims remain TYPED with UNSUPPORTED_SOURCE / REFUSED status,
+not ∅. Corrections append; the failed occurrence remains historical provenance,
+leaves the active graph, and the corrected attribution governs subsequent reuse.

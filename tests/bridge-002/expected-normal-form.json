@@ -1,0 +1,31 @@
+{
+  "evidence_status": "USER_SUPPLIED_TRANSCRIPT_ACCOUNT",
+  "claims": [
+    {
+      "id": "reported-production-claims",
+      "origin_source": "ExternalGoogleReader",
+      "type": "TYPED",
+      "source_status": "UNSUPPORTED_SOURCE",
+      "status": "REFUSED",
+      "relations": [
+        {
+          "kind": "Relay",
+          "actor": "Human",
+          "claim": "reported-production-claims"
+        }
+      ]
+    }
+  ],
+  "active_graph": [],
+  "residuals": {
+    "drop": 0,
+    "add": 0,
+    "strength": 0,
+    "provenance": 0
+  },
+  "symbol_locks": {
+    "theta": "Survival",
+    "Theta": "Timing",
+    "empty_symbol": "UNTYPEABLE"
+  }
+}

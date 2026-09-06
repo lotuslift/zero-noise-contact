@@ -21,6 +21,35 @@
     "residuals": {},
     "note": {
       "type": "string"
+    },
+    "evidence_status": {
+      "enum": [
+        "USER_SUPPLIED_TRANSCRIPT_ACCOUNT"
+      ]
+    },
+    "claim": {
+      "type": "object",
+      "required": [
+        "id",
+        "origin_source",
+        "type",
+        "source_status",
+        "status",
+        "relations"
+      ]
+    },
+    "claim_id": {
+      "type": "string"
+    },
+    "corrects_seq": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "prior_attribution": {
+      "type": "string"
+    },
+    "corrected_attribution": {
+      "type": "string"
     }
   }
 }

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import hashlib
+from release_files import release_files
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDE = {Path('manifest.sha256'), Path('docs/canonical/manifest.sha256')}
 
 def digest(path):
     h = hashlib.sha256()
@@ -13,14 +13,10 @@ def digest(path):
     return h.hexdigest()
 
 rows=[]
-for p in sorted(ROOT.rglob('*')):
-    if not p.is_file() or '.git' in p.parts:
-        continue
-    rel = p.relative_to(ROOT)
-    if rel in EXCLUDE:
-        continue
+for rel in release_files(ROOT):
+    p = ROOT / rel
     rows.append(f'{digest(p)}  {rel.as_posix()}')
 text='\n'.join(rows)+'\n'
-(ROOT/'manifest.sha256').write_text(text, encoding='utf-8')
-(ROOT/'docs/canonical/manifest.sha256').write_text(text, encoding='utf-8')
+(ROOT/'manifest.sha256').write_text(text, encoding='utf-8', newline='\n')
+(ROOT/'docs/canonical/manifest.sha256').write_text(text, encoding='utf-8', newline='\n')
 print(f'Wrote {len(rows)} manifest entries')

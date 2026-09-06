@@ -1,6 +1,6 @@
 # Zero-Noise Contact Kernel
 
-Version **0.1.0** · 2026-09-06
+Version **0.1.1** · 2026-09-06
 
 ## 0. Governing standard
 
@@ -13,6 +13,7 @@ Admit(y | p, J*) iff
   and ε_drop(y) = 0
   and ε_add(y) = 0
   and ε_strength(y) = 0
+  and ε_provenance(y) = 0
   and θ_J*(y) = 1.
 ```
 
@@ -96,9 +97,10 @@ S(y) = {e in E_y : strength_y(e) > strength_licensed(e)}
 ε_drop = |D(y)|
 ε_add = |U(y)|
 ε_strength = |S(y)|
+ε_provenance = |P(y)|
 ```
 
-Zero-noise requires all three residuals to be zero.
+Zero-noise requires all four residuals to be zero.
 
 ## 7. Constraint injection
 
@@ -177,7 +179,7 @@ Coherence across Difference is the criterion of lawful learning. A lawful update
 - begins from a noticed Difference;
 - retains locked required relations;
 - is licensed by source and jurisdiction;
-- returns drop/add/strength residuals to zero;
+- returns drop/add/strength/provenance residuals to zero;
 - appends the correction rather than retroactively substituting it.
 
 ## 15. Execution protocol
@@ -195,7 +197,7 @@ Coherence across Difference is the criterion of lawful learning. A lawful update
 10 DROP
 11 ADD
 12 STRENGTH
-13 TEMPER
+13 PROVENANCE / TEMPER
 14 GATE
 15 COMMIT
 16 θ / Survival
@@ -215,3 +217,25 @@ For every emitted load-bearing relation: an owning jurisdiction and type are rec
 ```
 
 Carry every required relation. Introduce no unsupported relation. Preserve earned claim strength. Commit before derive. Keep uncertainty inside its owning office. Append correction without erasure. Leave another truthful lawful turn available.
+
+## Provenance carriage
+
+Every load-bearing relation carries (Jurisdiction, Source, Carrier/Type, Relation,
+Scope, Status). OriginSource(c) is immutable originating authorship. Relay(h,c)
+means transport only; it implies no AuthoredBy, AdoptedBy, EndorsedBy, VerifiedBy,
+CommittedBy, or source authority.
+
+AdoptedBy(h,c,w), EndorsedBy(h,c,w), and VerifiedBy(v,c,w) are separate relations.
+A witness identifies the claim and actor and explicitly affirms the corresponding
+relation. Adoption can be witnessed by an explicit human statement, an authenticated
+repository approval/commit explicitly adopting that claim, or a declared authenticated
+approval mechanism. Mere quotation, forwarding, pasting, summarizing, asking about,
+or transmitting a claim is not adoption. AuthorityGrantedBy(a,b,c,w) adds witnessed
+authority over future use, without rewriting OriginSource or implying authorship.
+
+P(y) contains each claim whose origin changes or whose source/authority relation
+exceeds the retained reference and its lawful witnesses. epsilon_provenance = |P(y)|.
+A witness may license an additional authority relation, never an overwritten origin.
+Unsupported-source claims remain TYPED with UNSUPPORTED_SOURCE / REFUSED status,
+not ∅. Corrections append; the failed occurrence remains historical provenance,
+leaves the active graph, and the corrected attribution governs subsequent reuse.

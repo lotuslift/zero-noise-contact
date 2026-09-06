@@ -1,5 +1,5 @@
 {
-  "kernel_version": "0.1.0",
+  "kernel_version": "0.1.1",
   "bridge_status": "FIRST_BRIDGE_COMMITTED",
   "normal_form": "JURISDICTION_FIRST",
   "symbol_locks": {
@@ -10,7 +10,16 @@
   "active_reference": "kernel/current.json",
   "open_registry": [],
   "receipts": [
-    "receipts/FIRST_BRIDGE_COMMITTED.md"
+    "receipts/FIRST_BRIDGE_COMMITTED.md",
+    "receipts/BRIDGE_002_PROVENANCE_RELAY_PROMOTION_FAIL.md",
+    "receipts/bridge-002.ndjson"
   ],
-  "last_updated": "2026-09-06"
+  "last_updated": "2026-09-06",
+  "residuals": {
+    "drop": 0,
+    "add": 0,
+    "strength": 0,
+    "provenance": 0
+  },
+  "provenance_reference": "tests/bridge-002/expected-normal-form.json"
 }
