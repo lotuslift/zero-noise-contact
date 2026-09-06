@@ -1,0 +1,73 @@
+{
+  "name": "Zero-Noise Contact Kernel",
+  "version": "0.1.0",
+  "released": "2026-09-06",
+  "status": "FIRST_BRIDGE_COMMITTED",
+  "global_constraint": "ADMIT NO JURISDICTIONLESS TYPING",
+  "namespace": {
+    "empty_symbol": "∅",
+    "empty_symbol_type": "UNTYPEABLE",
+    "typed_refusal": "2",
+    "theta": "Survival",
+    "Theta": "Timing"
+  },
+  "minimum_kernel": [
+    "J",
+    "Gamma",
+    "A",
+    "E",
+    "rho",
+    "R",
+    "theta",
+    "Theta"
+  ],
+  "admission": {
+    "typed": true,
+    "gate": "can",
+    "epsilon_drop": 0,
+    "epsilon_add": 0,
+    "epsilon_strength": 0,
+    "survival": 1
+  },
+  "carriage_target": "1+1=2",
+  "learning_order": [
+    "Structure",
+    "Difference",
+    "Notice",
+    "Pattern",
+    "Recognition",
+    "WordUpdate",
+    "ContinuedStructure"
+  ],
+  "execution_order": [
+    "Structure",
+    "Jurisdiction",
+    "ConditionConstraint",
+    "Type",
+    "Notice",
+    "Pattern",
+    "Recognition",
+    "Draft",
+    "Read",
+    "Drop",
+    "Add",
+    "Strength",
+    "Temper",
+    "Gate",
+    "Commit",
+    "Survival",
+    "Timing",
+    "Receipt",
+    "WordUpdate",
+    "Move"
+  ],
+  "invariants": [
+    "Every required relation has a visible witness.",
+    "Every emitted relation is licensed by an owning jurisdiction.",
+    "Claim strength does not exceed source authority.",
+    "A reader never overwrites the state it reads.",
+    "Correction appends without erasing prior occurrence.",
+    "OPEN remains local to its owning proposition.",
+    "Another truthful lawful continuation remains available."
+  ]
+}

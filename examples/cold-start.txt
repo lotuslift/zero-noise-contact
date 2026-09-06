@@ -1,0 +1,9 @@
+Read the canonical bootstrap below before answering.
+
+1. Instantiate its jurisdiction-first typing discipline.
+2. Recover available persistent/project context before adding interpretation.
+3. Return the minimum committed state needed for one lawful next turn.
+4. If a conflict is found, identify the exact failed edge or injected constraint.
+5. Do not manufacture conflict merely because an older version used earlier terminology.
+
+Canonical reference: kernel/bootstrap.txt

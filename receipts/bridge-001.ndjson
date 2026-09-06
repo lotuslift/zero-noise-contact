@@ -1,0 +1,5 @@
+{"seq": 1, "event": "candidate_received", "status": "UNAUDITED", "note": "Over-coupled physical-to-economic execution proposal."}
+{"seq": 2, "event": "difference_noticed", "status": "REPAIR_REQUIRED", "residuals": ["uniform-threshold", "unverified-breach", "physical-to-money-conversion", "policy-authority-injection"]}
+{"seq": 3, "event": "status_separation", "status": "REPAIR_REQUIRED", "normal_form": "active | OPEN | REFUSED"}
+{"seq": 4, "event": "carrier_repair", "status": "REPAIR_REQUIRED", "note": "Typed physical observation and adapter domains introduced."}
+{"seq": 5, "event": "commit", "status": "FIRST_BRIDGE_COMMITTED", "residuals": {"drop": 0, "add": 0, "strength": 0}}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Zero-Noise Contact receipt event",
+  "type": "object",
+  "required": [
+    "seq",
+    "event",
+    "status"
+  ],
+  "properties": {
+    "seq": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "event": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "residuals": {},
+    "note": {
+      "type": "string"
+    }
+  }
+}

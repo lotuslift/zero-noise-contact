@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/zero-noise-contact/state.schema.json",
+  "title": "Zero-Noise Contact committed state",
+  "type": "object",
+  "required": [
+    "kernel_version",
+    "bridge_status",
+    "symbol_locks",
+    "active_reference",
+    "receipts"
+  ],
+  "properties": {
+    "kernel_version": {
+      "type": "string"
+    },
+    "bridge_status": {
+      "type": "string"
+    },
+    "normal_form": {
+      "type": "string"
+    },
+    "symbol_locks": {
+      "type": "object",
+      "required": [
+        "theta",
+        "Theta",
+        "empty_symbol"
+      ]
+    },
+    "active_reference": {
+      "type": "string"
+    },
+    "open_registry": {
+      "type": "array"
+    },
+    "receipts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "last_updated": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

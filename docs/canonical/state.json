@@ -1,0 +1,16 @@
+{
+  "kernel_version": "0.1.0",
+  "bridge_status": "FIRST_BRIDGE_COMMITTED",
+  "normal_form": "JURISDICTION_FIRST",
+  "symbol_locks": {
+    "theta": "Survival",
+    "Theta": "Timing",
+    "empty_symbol": "UNTYPEABLE"
+  },
+  "active_reference": "kernel/current.json",
+  "open_registry": [],
+  "receipts": [
+    "receipts/FIRST_BRIDGE_COMMITTED.md"
+  ],
+  "last_updated": "2026-09-06"
+}

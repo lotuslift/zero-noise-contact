@@ -1,0 +1,5 @@
+{
+  "kernel_version": "0.1.0",
+  "interfaces": [],
+  "rule": "OPEN interfaces remain typed and separately registered; they do not become active edges until a complete adapter is admitted."
+}

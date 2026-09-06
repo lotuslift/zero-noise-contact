@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this kernel, cite the versioned release and immutable commit."
+title: "Zero-Noise Contact Kernel"
+version: "0.1.0"
+date-released: "2026-09-06"
+authors:
+  - family-names: "Coppa"
+    given-names: "Anthony Vito"
+type: software

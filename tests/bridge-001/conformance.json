@@ -1,0 +1,6 @@
+{
+  "test_id": "bridge-001",
+  "mode": "cold-start",
+  "pass_condition": "typed edge/status equivalence at declared resolution; prose identity not required",
+  "expected": "expected-normal-form.json"
+}

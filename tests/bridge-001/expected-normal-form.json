@@ -1,0 +1,32 @@
+{
+  "bridge_status": "FIRST_BRIDGE_COMMITTED",
+  "active_graph": [
+    {
+      "from": "Physical Evidence",
+      "to": "Physical State Read",
+      "jurisdiction": "J_phys"
+    }
+  ],
+  "open_registry": [
+    "B_1->2",
+    "B_2->3",
+    "B_3->4"
+  ],
+  "required_status_separation": [
+    "ACTIVE",
+    "OPEN",
+    "REFUSED",
+    "UNTYPEABLE"
+  ],
+  "residuals": {
+    "drop": 0,
+    "add": 0,
+    "strength": 0
+  },
+  "prohibitions": [
+    "OPEN interface must not become an active edge without an admitted adapter.",
+    "REFUSED prior realization must remain provenance.",
+    "UNTYPEABLE must remain distinct from typed refusal.",
+    "Economic reader must not inherit physical or policy authority without an adapter."
+  ]
+}
